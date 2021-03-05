@@ -31,5 +31,27 @@ namespace AbstractClass
             Reference window = new Reference();
             window.ShowDialog();
         }
+
+        //Очистить поле вывода
+        private void CLEAR_Click(object sender, RoutedEventArgs e)
+        {
+            OUTPUT.Text = String.Empty;
+        }
+
+        //Присвоение и получение отдельных частей(год, месяц, день)
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string date1 = DATE1.Text;
+                Date d1 = new Date(date1);
+                string res1 = d1.AssigningAndReceivingIndividualParts(date1);
+                OUTPUT.Text += res1 + Environment.NewLine;
+            }
+            catch (Exception ex)
+            {
+                OUTPUT.Text+=ex.Message + Environment.NewLine;
+            }
+        }
     }
 }
