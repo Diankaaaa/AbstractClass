@@ -19,6 +19,9 @@ namespace AbstractClass
 
         public Date(int year, int month, int day) : base(year, month, day)
         {
+            this.year = year;
+            this.month = month;
+            this.day = day;
         }
 
         public Date(string st) : base(st)
@@ -31,13 +34,33 @@ namespace AbstractClass
 
         public Date(DateTime dt) : base(dt)
         {
+            this.year = dt.Year;
+            this.month = dt.Month;
+            this.day = dt.Day;
         }
 
         public override int inc()
         {
             return day++; 
         }
+        //Определение високосности 
+        public string LeapYear(string st)
+        {
+            string[] mas = st.Split('.');
+            this.year = int.Parse(mas[0]);
+            this.month = int.Parse(mas[1]);
+            this.day = int.Parse(mas[2]);
 
+            int year = int.Parse(mas[0]);
+            if((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+            {
+                return "Високосный год";
+            } 
+            else
+            {
+                return "Невисокосный год";
+            }
+        }
         //Присвоение и получение отдельных частей(год, месяц, день)
         public string AssigningAndReceivingIndividualParts(string st)
         {

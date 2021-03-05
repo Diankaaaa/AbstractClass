@@ -38,6 +38,15 @@ namespace AbstractClass
             OUTPUT.Text = String.Empty;
         }
 
+        //Определение високосности 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string date1 = DATE1.Text;
+            Date d1 = new Date(date1);
+            string result = d1.LeapYear(date1);
+            OUTPUT.Text += result + Environment.NewLine;
+        }
+
         //Присвоение и получение отдельных частей(год, месяц, день)
         private void Button_Click(object sender, RoutedEventArgs e)
         {
