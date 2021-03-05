@@ -38,8 +38,8 @@
         <Border Background="#FF686868" Width="510" VerticalAlignment="Top" Margin="10,278,0,0" Height="5" HorizontalAlignment="Left" BorderThickness="1" BorderBrush="Black"/>
         <Label Content="Введите время" HorizontalAlignment="Left" Height="33" Margin="10,381,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
         <Label Content="Введите время" HorizontalAlignment="Left" Height="33" Margin="12,319,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
-        <Label Content="Введите дату (Если надо сравнить с первой)" HorizontalAlignment="Left" Height="32" Margin="12,93,0,0" VerticalAlignment="Top" Width="352" Foreground="White" FontSize="16"/>
-        <Label Content="Введите дату" HorizontalAlignment="Left" Height="32" Margin="12,33,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
+        <Label Content="Введите дату" HorizontalAlignment="Left" Height="32" Margin="12,93,0,0" VerticalAlignment="Top" Width="352" Foreground="White" FontSize="16"/>
+        <Label Content="Введите дату " HorizontalAlignment="Left" Height="32" Margin="12,33,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
         <Button Content="Inc" HorizontalAlignment="Left" Height="100" Margin="312,160,0,0" VerticalAlignment="Top" Width="208" Foreground="White" FontSize="16" Background="#FF686868"/>
         <Button Content="Inc" HorizontalAlignment="Left" Height="100" Margin="312,461,0,0" VerticalAlignment="Top" Width="208" Foreground="White" FontSize="16" Background="#FF686868"/>
         <Button x:Name="CLEAR" Content="Очистить" HorizontalAlignment="Left" Height="50" Margin="241,511,0,0" VerticalAlignment="Top" Width="230" Foreground="White" Background="#FF686868" FontSize="16" Grid.Column="1" Click="CLEAR_Click"/>
