@@ -31,7 +31,7 @@ namespace AbstractClass
 
         public override int inc()
         {
-            return day++;
+            return day++; 
         }
     }
 }
