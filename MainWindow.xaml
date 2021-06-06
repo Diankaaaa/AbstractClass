@@ -15,33 +15,33 @@
         <TextBox x:Name="DATE1" HorizontalAlignment="Left" Height="24" Margin="12,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" SelectionBrush="#FF00E8FF" FontSize="16" Foreground="White" Background="#FF686868"/>
         <TextBlock x:Name="OUTPUT" Grid.Column="1" HorizontalAlignment="Left" Height="496" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Foreground="White" FontSize="16" Background="#FF686868"/>
         <TextBox x:Name="DATE2" HorizontalAlignment="Left" Height="24" Margin="12,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" SelectionBrush="#FF00E8FF" FontSize="16" Foreground="White" Background="#FF686868"/>
-        <Button Content="1" HorizontalAlignment="Left" Height="46" Margin="12,160,0,0" VerticalAlignment="Top" Width="92" FontSize="16" Background="#FF686868" Foreground="White"/>
-        <Button Content="2" HorizontalAlignment="Left" Height="46" Margin="113,160,0,0" VerticalAlignment="Top" Width="94" Background="#FF686868" FontSize="16" Foreground="White"/>
+        <Button Content="1" HorizontalAlignment="Left" Height="46" Margin="12,160,0,0" VerticalAlignment="Top" Width="92" FontSize="16" Background="#FF686868" Foreground="White" Click="Button_Click_5"/>
+        <Button Content="2" HorizontalAlignment="Left" Height="46" Margin="113,160,0,0" VerticalAlignment="Top" Width="94" Background="#FF686868" FontSize="16" Foreground="White" Click="Button_Click_4"/>
         <Button Content="3" HorizontalAlignment="Left" Height="46" Margin="212,160,0,0" VerticalAlignment="Top" Width="94" Background="#FF686868" FontSize="16" Foreground="White" Click="Button_Click_1"/>
         <Button Content="4" HorizontalAlignment="Left" Height="46" Margin="12,214,0,0" VerticalAlignment="Top" Width="92" Background="#FF686868" FontSize="16" Foreground="White" Click="Button_Click"/>
-        <Button Content="5" HorizontalAlignment="Left" Height="46" Margin="113,214,0,0" VerticalAlignment="Top" Width="94" Background="#FF686868" FontSize="16" Foreground="White"/>
-        <Button Content="6" HorizontalAlignment="Left" Height="46" Margin="212,214,0,0" VerticalAlignment="Top" Width="94" Background="#FF686868" FontSize="16" Foreground="White"/>
+        <Button Content="5" HorizontalAlignment="Left" Height="46" Margin="113,214,0,0" VerticalAlignment="Top" Width="94" Background="#FF686868" FontSize="16" Foreground="White" Click="Button_Click_2"/>
+        <Button Content="6" HorizontalAlignment="Left" Height="46" Margin="212,214,0,0" VerticalAlignment="Top" Width="94" Background="#FF686868" FontSize="16" Foreground="White" Click="Button_Click_3"/>
         <Label Content="Время (Вводить в формате Час:Минута:Секунда)" HorizontalAlignment="Left" Height="32" Margin="77,287,0,0" VerticalAlignment="Top" Width="386" Foreground="White" FontSize="16"/>
         <TextBox x:Name="Time1" HorizontalAlignment="Left" Height="24" Margin="10,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" SelectionBrush="#FF00E8FF" FontSize="16" Foreground="White" Background="#FF686868"/>
         <TextBox x:Name="Time2" HorizontalAlignment="Left" Height="24" Margin="10,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" SelectionBrush="#FF00E8FF" FontSize="16" Foreground="White" Background="#FF686868"/>
-        <Button Content="1" HorizontalAlignment="Left" Height="46" Margin="12,460,0,0" VerticalAlignment="Top" Width="92" Foreground="White" Background="#FF686868" FontSize="16"/>
-        <Button Content="2" HorizontalAlignment="Left" Height="46" Margin="113,460,0,0" VerticalAlignment="Top" Width="94" Foreground="White" Background="#FF686868" FontSize="16"/>
-        <Button Content="3" HorizontalAlignment="Left" Height="46" Margin="212,460,0,0" VerticalAlignment="Top" Width="94" Foreground="White" Background="#FF686868" FontSize="16"/>
-        <Button Content="4" HorizontalAlignment="Left" Height="46" Margin="12,515,0,0" VerticalAlignment="Top" Width="92" Foreground="White" Background="#FF686868" FontSize="16"/>
-        <Button Content="5" HorizontalAlignment="Left" Height="46" Margin="113,515,0,0" VerticalAlignment="Top" Width="94" Foreground="White" Background="#FF686868" FontSize="16"/>
-        <Button Content="6" HorizontalAlignment="Left" Height="46" Margin="212,515,0,0" VerticalAlignment="Top" Width="94" Foreground="White" Background="#FF686868" FontSize="16"/>
+        <Button Content="1" HorizontalAlignment="Left" Height="46" Margin="12,460,0,0" VerticalAlignment="Top" Width="92" Foreground="White" Background="#FF686868" FontSize="16" Click="Button_Click_7"/>
+        <Button Content="2" HorizontalAlignment="Left" Height="46" Margin="113,460,0,0" VerticalAlignment="Top" Width="94" Foreground="White" Background="#FF686868" FontSize="16" Click="Button_Click_8"/>
+        <Button Content="3" HorizontalAlignment="Left" Height="46" Margin="212,460,0,0" VerticalAlignment="Top" Width="94" Foreground="White" Background="#FF686868" FontSize="16" Click="Button_Click_9"/>
+        <Button Content="4" HorizontalAlignment="Left" Height="46" Margin="12,515,0,0" VerticalAlignment="Top" Width="92" Foreground="White" Background="#FF686868" FontSize="16" Click="Button_Click_10"/>
+        <Button Content="5" HorizontalAlignment="Left" Height="46" Margin="113,515,0,0" VerticalAlignment="Top" Width="94" Foreground="White" Background="#FF686868" FontSize="16" Click="Button_Click_11"/>
+        <Button Content="6" HorizontalAlignment="Left" Height="46" Margin="212,515,0,0" VerticalAlignment="Top" Width="94" Foreground="White" Background="#FF686868" FontSize="16" Click="Button_Click_12"/>
         <Label Content="Введите кол-во дней" HorizontalAlignment="Left" Height="32" Margin="312,37,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
         <Button x:Name="Reference" Content="Справка по кнопкам" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="10,511,0,0" VerticalAlignment="Top" Width="226" Background="#FF686868" Foreground="White" FontSize="16" Click="Reference_Click"/>
-        <TextBox x:Name="Date2_Copy" HorizontalAlignment="Left" Height="24" Margin="312,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" SelectionBrush="#FF00E8FF" FontSize="16" Foreground="White" Background="#FF686868"/>
+        <TextBox x:Name="KD" HorizontalAlignment="Left" Height="24" Margin="312,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" SelectionBrush="#FF00E8FF" FontSize="16" Foreground="White" Background="#FF686868"/>
         <Label Content="Введите кол-во секунд" HorizontalAlignment="Left" Height="33" Margin="312,381,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
-        <TextBox x:Name="Date2_Copy1" HorizontalAlignment="Left" Height="24" Margin="312,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" SelectionBrush="#FF00E8FF" FontSize="16" Foreground="White" Background="#FF686868"/>
+        <TextBox x:Name="CD" HorizontalAlignment="Left" Height="24" Margin="312,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" SelectionBrush="#FF00E8FF" FontSize="16" Foreground="White" Background="#FF686868"/>
         <Border Background="#FF686868" Width="510" VerticalAlignment="Top" Margin="10,278,0,0" Height="5" HorizontalAlignment="Left" BorderThickness="1" BorderBrush="Black"/>
         <Label Content="Введите время" HorizontalAlignment="Left" Height="33" Margin="10,381,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
         <Label Content="Введите время" HorizontalAlignment="Left" Height="33" Margin="12,319,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
         <Label Content="Введите дату" HorizontalAlignment="Left" Height="32" Margin="12,93,0,0" VerticalAlignment="Top" Width="352" Foreground="White" FontSize="16"/>
         <Label Content="Введите дату " HorizontalAlignment="Left" Height="32" Margin="12,33,0,0" VerticalAlignment="Top" Width="187" Foreground="White" FontSize="16"/>
-        <Button Content="Inc" HorizontalAlignment="Left" Height="100" Margin="312,160,0,0" VerticalAlignment="Top" Width="208" Foreground="White" FontSize="16" Background="#FF686868"/>
-        <Button Content="Inc" HorizontalAlignment="Left" Height="100" Margin="312,461,0,0" VerticalAlignment="Top" Width="208" Foreground="White" FontSize="16" Background="#FF686868"/>
+        <Button Content="Inc" HorizontalAlignment="Left" Height="100" Margin="312,160,0,0" VerticalAlignment="Top" Width="208" Foreground="White" FontSize="16" Background="#FF686868" Click="Button_Click_6"/>
+        <Button Content="Inc" HorizontalAlignment="Left" Height="100" Margin="312,461,0,0" VerticalAlignment="Top" Width="208" Foreground="White" FontSize="16" Background="#FF686868" Click="Button_Click_13"/>
         <Button x:Name="CLEAR" Content="Очистить" HorizontalAlignment="Left" Height="50" Margin="241,511,0,0" VerticalAlignment="Top" Width="230" Foreground="White" Background="#FF686868" FontSize="16" Grid.Column="1" Click="CLEAR_Click"/>
     </Grid>
 </Window>

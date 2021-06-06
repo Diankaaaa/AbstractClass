@@ -16,15 +16,17 @@ namespace AbstractClass
         //Сравнение дат(равно, до, после)
         //Вычисление количества дней между датами
 
-
-        public Date(int year, int month, int day) : base(year, month, day)
+        public int year { get; set; }
+        public int month { get; set; }
+        public int day { get; set; }
+        public Date(int year, int month, int day)
         {
             this.year = year;
             this.month = month;
             this.day = day;
         }
 
-        public Date(string st) : base(st)
+        public Date(string st) 
         {
             string[] mas = st.Split('.');
             this.year = int.Parse(mas[0]);
@@ -32,7 +34,7 @@ namespace AbstractClass
             this.day = int.Parse(mas[2]);
         }
 
-        public Date(DateTime dt) : base(dt)
+        public Date(DateTime dt) 
         {
             this.year = dt.Year;
             this.month = dt.Month;
@@ -41,7 +43,7 @@ namespace AbstractClass
 
         public override int inc()
         {
-            return day++; 
+            return this.day += 1; 
         }
         //Определение високосности 
         public string LeapYear(string st)
@@ -103,6 +105,43 @@ namespace AbstractClass
                 string result = "Год: " + mas[0] + " Месяц: " + mas[1] + " День: " + mas[2];
                 return result;
             }
+        }
+
+        //Сравнение дат(равно, до, после)
+        public string CompareDates(DateTime date1, DateTime date2) 
+        {
+            if(date1 == date2)
+            {
+                return "Даты равны";
+            }
+            if(date1  < date2)
+            {
+                return "<";
+            }
+            else
+            {
+                return ">";
+            }
+        }
+
+        //Вычисление количества дней между датами
+        public int NumberOfDaysBetweenDates(DateTime d1, DateTime d2)
+        {
+            int result = (d2 - d1).Days;
+            return result;
+        }
+
+        //Вычитание заданного количества дней из даты
+        public DateTime SubtractinFromTheDate(DateTime dt, double days)
+        {
+            DateTime res = dt.AddDays(-days);
+            return res;
+        }
+
+        public DateTime CalculatingTheDAteAfterAGivenNumberOfDays(DateTime dt, double days)
+        {
+            DateTime res = dt.AddDays(days);
+            return res;
         }
     }
 }
