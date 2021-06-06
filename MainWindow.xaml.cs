@@ -41,11 +41,18 @@ namespace AbstractClass
         //Вычисление даты через заданное количество дней
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            string d = DATE1.Text;
-            double cd = double.Parse(KD.Text);
+            try
+            {
+                string d = DATE1.Text;
+                double cd = double.Parse(KD.Text);
 
-            Date dt = new Date(d);
-            OUTPUT.Text += dt.CalculatingTheDAteAfterAGivenNumberOfDays(DateTime.Parse(d), cd) + Environment.NewLine;
+                Date dt = new Date(d);
+                OUTPUT.Text += dt.CalculatingTheDAteAfterAGivenNumberOfDays(DateTime.Parse(d), cd) + Environment.NewLine;
+            }
+            catch (Exception ex)
+            {
+                OUTPUT.Text += ex.Message + Environment.NewLine;
+            }
         }
         //Вычитание заданного количества дней из даты
         private void Button_Click_4(object sender, RoutedEventArgs e)
@@ -61,7 +68,7 @@ namespace AbstractClass
             }
             catch (Exception ex)
             {
-                OUTPUT.Text += ex.Message;
+                OUTPUT.Text += ex.Message + Environment.NewLine;
             }
         }
 
@@ -77,7 +84,7 @@ namespace AbstractClass
             }
             catch (Exception ex)
             {
-                OUTPUT.Text += ex.Message;
+                OUTPUT.Text += ex.Message + Environment.NewLine;
             }
         }
 
@@ -111,7 +118,7 @@ namespace AbstractClass
             }
             catch (Exception ex)
             {
-                OUTPUT.Text += ex.Message;
+                OUTPUT.Text += ex.Message + Environment.NewLine;
             }
         }
 
@@ -128,7 +135,7 @@ namespace AbstractClass
             }
             catch (Exception ex)
             {
-                OUTPUT.Text += ex.Message;
+                OUTPUT.Text += ex.Message + Environment.NewLine;
             }
         }
 
@@ -154,7 +161,7 @@ namespace AbstractClass
                 OUTPUT.Text += t.CalculatingDifferenceInSeconds(DateTime.Parse(t1), DateTime.Parse(t2)) + Environment.NewLine;
             }catch(Exception ex)
             {
-                OUTPUT.Text += ex.Message;
+                OUTPUT.Text += ex.Message + Environment.NewLine;
             }
         }
 
@@ -167,11 +174,11 @@ namespace AbstractClass
                 string t1 = Time1.Text;
                 double cd = double.Parse(CD.Text);
                 Time t = new Time(t1);
-                OUTPUT.Text += t.AddingTheTimeAndTheSpecifiedNumberOfSeconds(DateTime.Parse(t1), cd);
+                OUTPUT.Text += t.AddingTheTimeAndTheSpecifiedNumberOfSeconds(DateTime.Parse(t1), cd) + Environment.NewLine;
             }
             catch(Exception ex)
             {
-                OUTPUT.Text += ex.Message;
+                OUTPUT.Text += ex.Message + Environment.NewLine;
             }
         }
         //Вычитание из времени заданного количества секунд
@@ -182,11 +189,11 @@ namespace AbstractClass
                 string t1 = Time1.Text;
                 double cd = double.Parse(CD.Text);
                 Time t = new Time(t1);
-                OUTPUT.Text += t.SubtracingSecondsFromTime(DateTime.Parse(t1), cd);
+                OUTPUT.Text += t.SubtracingSecondsFromTime(DateTime.Parse(t1), cd) + Environment.NewLine;
             }
             catch (Exception ex)
             {
-                OUTPUT.Text += ex.Message;
+                OUTPUT.Text += ex.Message + Environment.NewLine;
             }
         }
 
@@ -202,7 +209,7 @@ namespace AbstractClass
             }
             catch (Exception ex)
             {
-                OUTPUT.Text += ex.Message;
+                OUTPUT.Text += ex.Message + Environment.NewLine;
             }
         }
 
@@ -213,7 +220,7 @@ namespace AbstractClass
             {
                 string t1 = Time1.Text;
                 Time t = new Time(t1);
-                OUTPUT.Text += t.TranslationInSeconds(TimeSpan.Parse(t1));
+                OUTPUT.Text += t.TranslationInSeconds(TimeSpan.Parse(t1)) + Environment.NewLine;
             }
             catch (Exception ex)
             {
@@ -221,13 +228,15 @@ namespace AbstractClass
             }
         }
 
+
+        //Перевод в минуты
         private void Button_Click_12(object sender, RoutedEventArgs e)
         {
             try
             {
                 string t1 = Time1.Text;
                 Time t = new Time(t1);
-                OUTPUT.Text += t.TranslationInMinutes(TimeSpan.Parse(t1));
+                OUTPUT.Text += t.TranslationInMinutes(TimeSpan.Parse(t1)) + Environment.NewLine;
             }
             catch (Exception ex)
             {
@@ -235,11 +244,12 @@ namespace AbstractClass
             }
         }
 
+        //Метод инкремента
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
             string t1 = Time1.Text;
             Time t = new Time(t1);
-            OUTPUT.Text += t.inc();
+            OUTPUT.Text += t.inc() + Environment.NewLine;
         }
     }
 }
